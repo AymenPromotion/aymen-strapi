@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre"
+    },
+    "article": {
+      "type": "blocks"
+    },
+    "auteur": {
+      "type": "string"
+    },
+    "mignature_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.meta-data"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "événement",
+        "aménagement et décoration",
+        "investissement",
+        "achat et vente",
+        "style de vie",
+        "gestion de copropriété"
+      ],
+      "required": true
+    }
+  }
+}
