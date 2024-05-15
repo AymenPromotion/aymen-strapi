@@ -9,12 +9,12 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.24.2",
-    "@strapi/plugin-users-permissions": "4.24.2",
-    "@strapi/plugin-i18n": "4.24.2",
+    "@retikolo/drag-drop-content-types": "^1.5.2",
     "@strapi/plugin-cloud": "4.24.2",
+    "@strapi/plugin-i18n": "4.24.2",
+    "@strapi/plugin-users-permissions": "4.24.2",
+    "@strapi/strapi": "4.24.2",
     "better-sqlite3": "8.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
