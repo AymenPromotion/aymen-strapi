@@ -54,6 +54,12 @@
         "gestion de copropriété"
       ],
       "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
