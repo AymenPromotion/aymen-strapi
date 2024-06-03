@@ -393,6 +393,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
       Attribute.Required;
     date: Attribute.Date;
     description: Attribute.Text;
+    rank: Attribute.Integer & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
